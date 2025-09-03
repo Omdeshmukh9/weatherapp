@@ -1,38 +1,103 @@
-.App {
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, #root {
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f7fa;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+
+.weather-card {
+  background: #fff;
+  border-radius: 28px;
+  padding: 2rem;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 380px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 2rem;
+  color: #111827;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.weather-info {
+  margin-bottom: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.weather-info .icon {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.weather-info .temp {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.weather-info .city {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  color: #374151;
+}
+
+.weather-info .condition {
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+
+.search-bar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #f3f4f6;
+  border-radius: 14px;
+  padding: 0.5rem;
+  margin-top: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.search-bar input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  padding: 0.3rem;
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-bar button {
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
+
+
+.error {
+  color: red;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
