@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
-  const [city, setCity] = useState("New York"); // default city
+  const [city, setCity] = useState("New York"); 
   const [weather, setWeather] = useState(null);
   const [error, setError] = useState(null);
   const [query, setQuery] = useState("");
